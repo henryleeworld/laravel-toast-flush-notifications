@@ -1,4 +1,4 @@
-# Laravel 8 Toast 刷新通知
+# Laravel 10 Toast 刷新通知
 
 利用 toastr JavaScript 函式庫來達到非阻塞通知。
 
