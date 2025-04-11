@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
-use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -29,10 +28,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME)->with([
+        return redirect()->intended(route('dashboard', absolute: false))->with([
             'notification-type'    => 'success',
-            'notification-content' => trans('global.auth.notification.login.title'),
-            'notification-title'   => trans('global.auth.notification.login.content'),
+            'notification-content' => 'Login',
+            'notification-title'   => 'Login Successfully!',
         ]);
     }
 
