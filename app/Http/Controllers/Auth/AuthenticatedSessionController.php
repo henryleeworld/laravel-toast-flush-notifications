@@ -30,8 +30,8 @@ class AuthenticatedSessionController extends Controller
 
         return redirect()->intended(route('dashboard', absolute: false))->with([
             'notification-type'    => 'success',
-            'notification-content' => 'Login',
-            'notification-title'   => 'Login Successfully!',
+            'notification-content' => 'Login successfully!',
+            'notification-title'   => 'Login',
         ]);
     }
 

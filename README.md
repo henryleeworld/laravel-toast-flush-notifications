@@ -1,4 +1,4 @@
-# Laravel 11 Toast 刷新通知
+# Laravel 12 Toast 刷新通知
 
 利用 toastr JavaScript 函式庫來達到非阻塞通知。
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/oJ86WfS.png)
+![](https://i.imgur.com/gIpEsgn.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/A3aSKww.gif)
+![](https://i.imgur.com/CtWEhDV.gif)
 > 使用現有的帳號登入後，進入預設歡迎頁面並同時傳送登入成功通知
